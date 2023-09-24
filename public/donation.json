@@ -1,0 +1,135 @@
+[
+    {
+      "id": 1,
+      "picture": "https://i.ibb.co/jbkxV5V/Health.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg_color": "#0052ff33",
+      "card_bg_color": "#0052ff26",
+      "text_title_color": "#0052FF",
+      "description": "Donations to the health sector play a critical role in advancing healthcare on various fronts. These contributions fund critical medical research, enabling scientists and researchers to develop innovative treatments, vaccines, and therapies. They also support the acquisition of state-of-the-art medical equipment and technology, improving diagnostic accuracy and patient care.",
+      "price": 290
+    },
+    {
+      "id": 2,
+      "picture": "https://i.ibb.co/308x6pH/Education.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg_color": "##ff444a33",
+      "card_bg_color": "#ff444a26",
+      "text_title_color": "#FF444A",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "price": 290
+    },
+    {
+      "id": 3,
+      "picture": "https://i.ibb.co/ZzSxVq4/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg_color": "#79c23f33",
+      "card_bg_color": "#79c23f26",
+      "text_title_color": "#79C23F",
+      "description": "Donations to clothing initiatives are a compassionate way to address issues of poverty and homelessness. By contributing gently used or new clothing items, individuals can directly impact the well-being and dignity of those in need. These donations provide warmth, protection, and a sense of self-worth to vulnerable individuals and families. Furthermore, they promote sustainability by reducing textile waste and supporting the concept of reuse. Donating clothing is a simple yet powerful way to make a positive difference in the lives of others and contribute to a more equitable and sustainable society.",
+      "price": 290
+    },
+    {
+      "id": 4,
+      "picture": "https://i.ibb.co/WzMDhpg/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg_color": "#f8714733",
+      "card_bg_color": "#f8714726",
+      "text_title_color": "#F87147",
+      "description": "Donations to food charities are a lifeline for countless individuals facing hunger and food insecurity. By providing non-perishable items or monetary contributions, donors help these organizations distribute nourishing meals to vulnerable communities. These acts of kindness alleviate hunger, improve health, and bring hope to those in need. Additionally, food donations reduce food waste and promote sustainability by redirecting surplus supplies to those who can benefit from them. Supporting food charities is a meaningful way to address the pressing issue of hunger and foster stronger, more compassionate communities.",
+      "price": 290
+    },
+    {
+      "id": 5,
+      "picture": "https://i.ibb.co/WzMDhpg/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg_color": "#f8714733",
+      "card_bg_color": "#f8714726",
+      "text_title_color": "#F87147",
+      "description": "Donations to food charities are a lifeline for countless individuals facing hunger and food insecurity. By providing non-perishable items or monetary contributions, donors help these organizations distribute nourishing meals to vulnerable communities. These acts of kindness alleviate hunger, improve health, and bring hope to those in need. Additionally, food donations reduce food waste and promote sustainability by redirecting surplus supplies to those who can benefit from them. Supporting food charities is a meaningful way to address the pressing issue of hunger and foster stronger, more compassionate communities.",
+      "price": 290
+    },
+    {
+      "id": 6,
+      "picture": "https://i.ibb.co/ZzSxVq4/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg_color": "#79c23f33",
+      "card_bg_color": "#79c23f26",
+      "text_title_color": "#79C23F",
+      "description": "Donations to clothing initiatives are a compassionate way to address issues of poverty and homelessness. By contributing gently used or new clothing items, individuals can directly impact the well-being and dignity of those in need. These donations provide warmth, protection, and a sense of self-worth to vulnerable individuals and families. Furthermore, they promote sustainability by reducing textile waste and supporting the concept of reuse. Donating clothing is a simple yet powerful way to make a positive difference in the lives of others and contribute to a more equitable and sustainable society.",
+      "price": 290
+    },
+    {
+      "id": 7,
+      "picture": "https://i.ibb.co/308x6pH/Education.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg_color": "##ff444a33",
+      "card_bg_color": "#ff444a26",
+      "text_title_color": "#FF444A",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "price": 290
+    },
+    {
+      "id": 8,
+      "picture": "https://i.ibb.co/jbkxV5V/Health.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg_color": "#0052ff33",
+      "card_bg_color": "#0052ff26",
+      "text_title_color": "#0052FF",
+      "description": "Donations to the health sector play a critical role in advancing healthcare on various fronts. These contributions fund critical medical research, enabling scientists and researchers to develop innovative treatments, vaccines, and therapies. They also support the acquisition of state-of-the-art medical equipment and technology, improving diagnostic accuracy and patient care.",
+      "price": 290
+    },
+    {
+      "id": 9,
+      "picture": "https://i.ibb.co/jbkxV5V/Health.png",
+      "title": "Clean water for children",
+      "category": "Health",
+      "category_bg_color": "#0052ff33",
+      "card_bg_color": "#0052ff26",
+      "text_title_color": "#0052FF",
+      "description": "Donations to the health sector play a critical role in advancing healthcare on various fronts. These contributions fund critical medical research, enabling scientists and researchers to develop innovative treatments, vaccines, and therapies. They also support the acquisition of state-of-the-art medical equipment and technology, improving diagnostic accuracy and patient care.",
+      "price": 290
+    },
+    {
+      "id": 10,
+      "picture": "https://i.ibb.co/308x6pH/Education.png",
+      "title": "Good education",
+      "category": "Education",
+      "category_bg_color": "##ff444a33",
+      "card_bg_color": "#ff444a26",
+      "text_title_color": "#FF444A",
+      "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+      "price": 290
+    },
+    {
+      "id": 11,
+      "picture": "https://i.ibb.co/ZzSxVq4/Clothing.png",
+      "title": "Used Clothing Drive",
+      "category": "Clothing",
+      "category_bg_color": "#79c23f33",
+      "card_bg_color": "#79c23f26",
+      "text_title_color": "#79C23F",
+      "description": "Donations to clothing initiatives are a compassionate way to address issues of poverty and homelessness. By contributing gently used or new clothing items, individuals can directly impact the well-being and dignity of those in need. These donations provide warmth, protection, and a sense of self-worth to vulnerable individuals and families. Furthermore, they promote sustainability by reducing textile waste and supporting the concept of reuse. Donating clothing is a simple yet powerful way to make a positive difference in the lives of others and contribute to a more equitable and sustainable society.",
+      "price": 290
+    },
+    {
+      "id": 12,
+      "picture": "https://i.ibb.co/WzMDhpg/Food.png",
+      "title": "Better Food for Everyone",
+      "category": "Food",
+      "category_bg_color": "#f8714733",
+      "card_bg_color": "#f8714726",
+      "text_title_color": "#F87147",
+      "description": "Donations to food charities are a lifeline for countless individuals facing hunger and food insecurity. By providing non-perishable items or monetary contributions, donors help these organizations distribute nourishing meals to vulnerable communities. These acts of kindness alleviate hunger, improve health, and bring hope to those in need. Additionally, food donations reduce food waste and promote sustainability by redirecting surplus supplies to those who can benefit from them. Supporting food charities is a meaningful way to address the pressing issue of hunger and foster stronger, more compassionate communities.",
+      "price": 290
+    }
+  ]
+  
