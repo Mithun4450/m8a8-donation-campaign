@@ -1,11 +1,14 @@
 import { NavLink } from "react-router-dom";
+import myLogo from "../../assets/Logo.png"
+
+
 
 const Navbar = () => {
     return (
         <div>
             <div className="navbar bg-base-100 py-9">
                 <div className="flex-1">
-                    <img className="h-9" src="Logo.png" alt="" />
+                    <img className="h-9" src={myLogo} alt="" />
                 </div>
                 <div className="gap-4 ml-4 md:gap-9 ">
                     <NavLink
