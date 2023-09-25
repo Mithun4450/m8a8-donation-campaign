@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
+import swal from "sweetalert";
 
 
 const DonationDetails = () => {
     const {id} = useParams();
-
     const categories = useLoaderData();
     
-
     const [category, setCategory] = useState({});
 
     useEffect(() =>{
@@ -15,8 +14,25 @@ const DonationDetails = () => {
         setCategory(findCategory)
     },[categories, id])
 
-    console.log(category)
+    
     const {picture, title, category_text, category_bg_color, card_bg_color, text_title_color, description, price} = category;
+
+    const handleDonateButton = () => {
+        swal("Good job!", "You have donated successfully!", "success");
+
+        const categoryArray = [];
+        const storedCategories = JSON.parse(localStorage.getItem('donations'));
+        if(!storedCategories){
+            categoryArray.push(category);
+            localStorage.setItem('donations', JSON.stringify(categoryArray));
+        }
+        else{
+            categoryArray.push(...storedCategories, category);
+            localStorage.setItem('donations',JSON.stringify(categoryArray));
+
+        }
+
+    }
 
     
 
@@ -26,7 +42,7 @@ const DonationDetails = () => {
             <div className="relative">
                 <img className="w-full h-[50vh] " src={picture} alt="" />
                 <div className="w-full h-20 bg-[#0b0b0b80] absolute left-0 bottom-0">
-                    <button style={{backgroundColor:text_title_color}} className="ml-6 mt-4 px-5 py-3 rounded-md text-white">Donate $290</button>
+                    <button onClick={handleDonateButton} style={{backgroundColor:text_title_color}} className="ml-6 mt-4 px-5 py-3 rounded-md text-white">Donate $290</button>
                 </div>
             </div>
             <div className="mt-5 ">
