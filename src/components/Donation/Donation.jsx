@@ -1,9 +1,9 @@
-import React from 'react';
+
 import DonationCard from '../DonationCard/DonationCard';
 
 const Donation = () => {
     const storedCategories = JSON.parse(localStorage.getItem('donations'));
-    console.log(storedCategories)
+    
     return (
         <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5'>
             {
