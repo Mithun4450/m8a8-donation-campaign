@@ -18,17 +18,28 @@ const DonationDetails = () => {
     const {picture, title, category_text, category_bg_color, card_bg_color, text_title_color, description, price} = category;
 
     const handleDonateButton = () => {
-        swal("Good job!", "You have donated successfully!", "success");
+        
 
         const categoryArray = [];
         const storedCategories = JSON.parse(localStorage.getItem('donations'));
         if(!storedCategories){
             categoryArray.push(category);
             localStorage.setItem('donations', JSON.stringify(categoryArray));
+            swal("Good job!", "You have donated successfully!", "success");
+            
         }
         else{
-            categoryArray.push(...storedCategories, category);
-            localStorage.setItem('donations',JSON.stringify(categoryArray));
+            const isExist = storedCategories.find(storedCategory => storedCategory.id === parseInt(id));
+            console.log(isExist);
+            if(!isExist){
+                categoryArray.push(...storedCategories, category);
+                localStorage.setItem('donations',JSON.stringify(categoryArray));
+                swal("Good job!", "You have donated successfully!", "success");
+            }
+            else{
+                swal("Sorry", "You have already donated in this!");
+            }
+            
 
         }
 

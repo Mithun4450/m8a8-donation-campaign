@@ -1,25 +1,35 @@
 
 
-import { useState } from "react";
+
 import { PieChart, Pie, Cell } from "recharts";
 
 const Statistics = () => {
-    
-    
-    
+  const storedCategories = JSON.parse(localStorage.getItem('donations'));
 
-
+  const yourDonation = storedCategories.length;
+  
+  /**
+   * We know that pie chart = 100%
+   * So Total donation + your donation = 100%
+   * so we should show remaining total donation after subtracting your donation from total donation
+   * Otherwise it is impossible to be 100%
+   */
+  const remainingTotalDonation = 12-yourDonation;
+    
 
     const data = [
         { name: "Total Donation", value: 12 },
-        { name: "Your Donation", value: 4 }
+        { name: "Your Donation", value: 0 }
         
       ];
       
-      const COLORS = ["#FF444A", "#00C49F"];
+      data[1].value = yourDonation;
+      data[0].value = remainingTotalDonation;
+
+    const COLORS = ["#FF444A", "#00C49F"];
       
-      const RADIAN = Math.PI / 180;
-      const renderCustomizedLabel = ({
+    const RADIAN = Math.PI / 180;
+    const renderCustomizedLabel = ({
         cx,
         cy,
         midAngle,
