@@ -1,17 +1,19 @@
 
-
-import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
+import { useEffect, useState } from "react";
+import { PieChart, Pie, Cell} from "recharts";
 
 const Statistics = () => {
   
-  
+  const [storedCategoriesLength, setStoredCategoriesLength] = useState(0);
 
-  const storedCategories = JSON.parse(localStorage.getItem('donations'));
-  const yourDonation = storedCategories.length;
-  const remainingTotalDonation = 12 - storedCategories.length;
-  
-  console.log(yourDonation);
-  console.log(remainingTotalDonation);
+  useEffect(() => {
+      const storedCategories = JSON.parse(localStorage.getItem('donations'));
+      setStoredCategoriesLength(storedCategories.length)
+
+  },[])
+
+
+   const yourDonation = storedCategoriesLength;
   
   /**
    * We know that pie chart = 100%
@@ -19,8 +21,9 @@ const Statistics = () => {
    * so we should show remaining total donation after subtracting your donation from total donation
    * Otherwise it is impossible to be 100%
    */
+
+   const remainingTotalDonation = 12 - storedCategoriesLength;
   
-    
 
     const data = [
         { name: "Total Donation", value: 12 },
