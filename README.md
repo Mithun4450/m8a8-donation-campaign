@@ -1,8 +1,8 @@
-# React + Vite
+Project Features:
+ * In this project navbar includes logo and three menu items: Home, Donation, Statistics. This navbar can be shown form all other pages. Home, Donation, Statistics menus remain active, when user will visit these pages.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ * In the Home page, there are banner with background image and search option and 12 category cards. If user search category in the search option, he will find cards category wise.
 
-Currently, two official plugins are available:
+ * If user click on the card, he will go to donation details page. If he click on the donate button, donation card will be added to the donation page. Here after clicking on donate button, information is saved on the local storage. After getting information from local storage, data are shown on the donation card.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * On the Statistics page a pie chart is shown. After getting data from local storage, array length is used to show percentage on the pie chart. Here total donation and your donation are shown as percentage.
