@@ -3,9 +3,14 @@ import { useState } from 'react';
 import DonationCard from '../DonationCard/DonationCard';
 
 const Donation = () => {
-    const storedCategories = JSON.parse(localStorage.getItem('donations'));
+
+    
+    const storedCategories = JSON.parse(localStorage.getItem('donations')) || [];
+    
 
     const [storedCategoriesLength, setStoredCategoriesLength] = useState(4);
+
+   
     
     return (
         <div >
@@ -15,16 +20,20 @@ const Donation = () => {
                 }
 
             </div>
-            <div className={storedCategoriesLength > 4? 'hidden' : ''}>
-                
-                    <div className='text-center my-5'>
-                       <button onClick={() => setStoredCategoriesLength(storedCategories.length)} className='bg-[#009444] text-white px-6 py-3 rounded-md '>See All</button>
-                    </div>
 
-                
-                
-                
+            <div className={storedCategoriesLength > 4 && 'hidden' }>
+                <div className= 'text-center my-5'>
+                    <button onClick={()=>setStoredCategoriesLength(storedCategories.length)} className='bg-[#009444] text-white px-6 py-3 rounded-md '>See All</button>
+                    
+                </div>
+
             </div>
+            
+            
+            
+
+            
+            
            
            
             

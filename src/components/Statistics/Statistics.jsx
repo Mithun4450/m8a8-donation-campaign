@@ -4,34 +4,29 @@ import { PieChart, Pie, Cell} from "recharts";
 
 const Statistics = () => {
   
-  const [storedCategoriesLength, setStoredCategoriesLength] = useState(0);
-
-  useEffect(() => {
-      const storedCategories = JSON.parse(localStorage.getItem('donations'));
-      setStoredCategoriesLength(storedCategories.length)
-
-  },[])
-
-
-   const yourDonation = storedCategoriesLength;
-  
-  /**
-   * We know that pie chart = 100%
-   * So Total donation + your donation = 100%
-   * so we should show remaining total donation after subtracting your donation from total donation
-   * Otherwise it is impossible to be 100%
-   */
-
-   const remainingTotalDonation = 12 - storedCategoriesLength;
   
 
-    const data = [
+
+      const data = [
         { name: "Total Donation", value: 12 },
         { name: "Your Donation", value: 0 }
         
       ];
+
+      const [storedCategoriesLength, setStoredCategoriesLength] = useState(0);
+
+     useEffect(() =>{ 
+      const storedCategories = JSON.parse(localStorage.getItem('donations')) || [];
+      setStoredCategoriesLength(storedCategories.length)}
+     ,[])
       
+
+     
+
+      const yourDonation = storedCategoriesLength;
       data[1].value = yourDonation;
+
+      const remainingTotalDonation = 12 - storedCategoriesLength;
       data[0].value = remainingTotalDonation;
 
     const COLORS = ["#FF444A", "#00C49F"];
